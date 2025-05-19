@@ -57,7 +57,7 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     align-items: center;
     justify-content: center;
     z-index: 100;
@@ -73,7 +73,7 @@ h1 {
     padding: 25px;
     width: 90%;
     max-width: 500px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     max-height: 90vh;
     overflow-y: auto;
     position: relative;
@@ -147,6 +147,14 @@ h1 {
     resize: vertical;
 }
 
+.note-text-container {
+    display: none;
+}
+
+.note-text-container.active {
+    display: block;
+}
+
 .note-list-items {
     display: none;
 }
@@ -191,6 +199,13 @@ h1 {
     background: transparent;
     color: var(--primary);
     border: 1px solid var(--primary);
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-bottom: 20px;
+    display: inline-block;
 }
 
 .cancel-btn:hover {
@@ -207,7 +222,7 @@ h1 {
     background: var(--card);
     border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
